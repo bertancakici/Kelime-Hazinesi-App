@@ -1,1 +1,1 @@
-# Kelime-Hazinesi
+# Kelime Hazinesi Uygulaması
