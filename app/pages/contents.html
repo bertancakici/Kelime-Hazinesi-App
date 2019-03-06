@@ -1,0 +1,55 @@
+<div class="swiper-container swiper-init swiper-ss" swiper>
+
+    <div class="swiper-wrapper">
+
+        <!--<div class="swiper-slide" ng-repeat="content in contents"><img src="img/band-2264972_640.jpg" alt="" class="mw-100"></div>-->
+        <div class="swiper-slide" ng-repeat="content in contents" is-loaded>
+
+            <div class="container  main-container">
+            <!--<div class="container mt-4 main-container">-->
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-12">
+                        <div class="card">
+                            <div class="card-header border-bottom">
+                                <div class="media">
+                                    <div class="icon-circle icon-40 bg-light-primary mr-3">
+                                        <i class="material-icons">public</i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6 class="my-0 content-color-primary">{{cname}}</h6>
+                                        <p class="small mb-0">Kart Numarası: {{content.id}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body text-center bg-light-secondary">
+                                <img ng-src='http://www.bertancakici.com/apps/kelime-hazinesi/contents/kategoriler/{{cname}}/resimler/{{content.id}}.png'
+                                     alt='image' class='slider-images'>
+                            </div>
+                            <div class="card-footer text-center border-top">
+                                <div class="row my-4" ng-click="PlaySound('tr',content.id)">
+                                    <div class="col-2">
+                                        <img src="app/assets/img/flags/tr.png" class="info-images">
+                                    </div>
+                                    <div class="col" >{{content.tr}}</div>
+                                    <div class="col-2">
+                                        <img src="app/assets/img/main/play-music4.png" class="info-images">
+                                    </div>
+                                </div>
+                                <div class="row my-4" ng-click="PlaySound('en',content.id)">
+                                    <div class="col-2">
+                                        <img src="app/assets/img/flags/uk.png" class="info-images">
+                                    </div>
+                                    <div class="col">{{content.en}}</div>
+                                    <div class="col-2">
+                                        <img src="app/assets/img/main/play-music4.png" class="info-images">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

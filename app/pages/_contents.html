@@ -1,0 +1,19 @@
+<div class="container mt-4 main-container">
+    <div class="row">
+        <div class=" col-12 col-md-12 mb-4">
+            <div class="swiper-container swiper-init swiper-ss" swiper>
+
+                <div class="swiper-wrapper">
+
+                    <!--<div class="swiper-slide" ng-repeat="content in contents"><img src="img/band-2264972_640.jpg" alt="" class="mw-100"></div>-->
+                    <div class="swiper-slide" ng-repeat="content in contents" is-loaded>
+
+                        <img src="http://www.bertancakici.com/apps/kelime-hazinesi/contents/kategoriler/hayvanlar/resimler/{{content.id}}.png"
+                             alt="" class="mw-100" style="max-height: 250px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
